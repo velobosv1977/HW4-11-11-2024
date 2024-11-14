@@ -2,20 +2,30 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //Task 1
+        //Task 1. v1.
         System.out.println("ДЗ№3-1. Условный оператор. Урок 2.");
-        System.out.println("Задача 1. Моб.приложение");
+        System.out.println("Задача 1. В1. Моб.приложение");
         //Задание переменной, где 0 - iOS, 1 - Android
-        int clientOS = 3;
+        int clientOS = 1;
         switch (clientOS) {
             case 0:
-                System.out.println("Установите версию приложения iOS по ссылке");
+                System.out.println("Установите версию приложения для iOS по ссылке");
                 break;
             case 1:
-                System.out.println("Установите версию приложения Android по ссылке");
+                System.out.println("Установите версию приложения для Android по ссылке");
                 break;
             default:
-                System.out.println("Ошибочный выбор. 0 - iOS; 1 - Android");
+                System.out.println("Ошибочный выбор. Введите 0 - iOS; 1 - Android");
+        }
+        //Task 1. v2. else-if
+        System.out.println("Задача 1. В2. Моб.приложение");
+        int clientOS1 = 0;
+        if (clientOS1 == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (clientOS1 == 1) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        } else {
+            System.out.println("Ошибочный выбор. Введите 0 - iOS; 1 - Android");
         }
         //Task 2. var1.
         System.out.println("Задача 2. Моб.приложение+год выпуска. 1-й вариант решения.");
@@ -89,7 +99,7 @@ public class Main {
         }
         //Task 5.
         System.out.println("Задача 5. Месяцы-сезоны");
-        int monthNumber=7;
+        int monthNumber = 2;
         switch (monthNumber) {
             case 12:
             case 1:
